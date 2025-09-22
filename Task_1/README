@@ -1,0 +1,106 @@
+# Task 1 - Elevate Labs
+
+## Overview
+
+This repository contains the solution for **Task 1** of the Elevate Labs program. The task focuses on practical applications of data analysis, manipulation, and visualization using Python and relevant libraries.
+
+The project demonstrates skills in:
+
+* Data cleaning and preprocessing
+* Exploratory Data Analysis (EDA)
+* Data visualization
+* Basic statistical insights
+* Python programming for data analysis
+
+## Folder Structure
+
+```
+Task_1/
+│
+├── data/               # Contains dataset files
+├── notebooks/          # Jupyter notebooks with analysis and solutions
+├── scripts/            # Python scripts for data processing or analysis
+└── README.md           # Project documentation
+```
+
+## Installation
+
+To run the project locally, follow these steps:
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/jaripitykishor/Elevate_labs.git
+cd Elevate_labs/Task_1
+```
+
+2. **Set up a virtual environment (optional but recommended)**
+
+```bash
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
+
+3. **Install required packages**
+
+```bash
+pip install -r requirements.txt
+```
+
+> Note: If `requirements.txt` is not available, you can manually install essential packages:
+
+```bash
+pip install pandas numpy matplotlib seaborn jupyter
+```
+
+## Usage
+
+1. Open the Jupyter notebook for Task 1:
+
+```bash
+jupyter notebook notebooks/Task_1.ipynb
+```
+
+2. Follow the notebook to see step-by-step data analysis, visualization, and insights.
+
+3. For running Python scripts directly:
+
+```bash
+python scripts/task1_analysis.py
+```
+
+## Features
+
+* Reads and preprocesses the provided dataset
+* Handles missing data and data inconsistencies
+* Performs exploratory data analysis (EDA)
+* Generates visualizations for insights
+* Outputs summary reports of findings
+
+## Contributing
+
+If you want to contribute:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add your feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Create a Pull Request
+
+## License
+
+This project is open-source and free to use under the MIT License.
+
+## Author
+
+**J Kishor** – [GitHub](https://github.com/jaripitykishor)
+
+---
+
+# requirements.txt
+
+pandas
+numpy
+matplotlib
+seaborn
+jupyter
