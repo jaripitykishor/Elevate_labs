@@ -1,0 +1,59 @@
+# Task 6: Sales Trend Analysis Using Aggregations
+
+## Overview
+Data analyst internship task focusing on monthly revenue and order volume analysis using SQL aggregations.
+
+## Objective
+Analyze sales trends by grouping data monthly and calculating key business metrics.
+
+## Dataset
+- **File**: Online-Sales-Data.csv
+- **Records**: 240 transactions
+- **Period**: January 2024 - August 2024
+- **Columns**: Transaction ID, Date, Product Category, Total Revenue, Units Sold, Region, Payment Method
+
+## Key SQL Concepts
+- `EXTRACT()` for date components
+- `GROUP BY` for data aggregation  
+- `SUM()`, `COUNT(DISTINCT)` for calculations
+- `ORDER BY` for result sorting
+- Window functions for growth analysis
+
+## Main Query
+SELECT
+EXTRACT(YEAR FROM Date) as Year,
+EXTRACT(MONTH FROM Date) as Month,
+SUM(Total_Revenue) as Monthly_Revenue,
+COUNT(DISTINCT Transaction_ID) as Order_Volume
+FROM sales_data
+GROUP BY EXTRACT(YEAR FROM Date), EXTRACT(MONTH FROM Date)
+ORDER BY Year, Month;
+
+## Results Summary
+- **Total Revenue (8 months)**: $80,567.85
+- **Average Monthly Revenue**: $10,070.98
+- **Total Orders**: 240
+- **Highest Revenue Month**: January 2024 ($14,548.32)
+- **Lowest Revenue Month**: July 2024 ($6,797.08)
+
+## Files Included
+- `task6-sql-script.sql` - Main SQL queries
+- `monthly_sales_analysis_results.csv` - Analysis results
+- `sql-practice-questions.md` - 30 practice questions with solutions
+- `SQL-Interview-Questions-Answers.pdf` - Interview prep guide
+
+## Skills Demonstrated
+✅ Data aggregation and grouping  
+✅ Date function manipulation  
+✅ Business metrics calculation  
+✅ Trend analysis  
+✅ Query optimization  
+
+## Tools Used
+- **Database**: PostgreSQL/MySQL/SQLite compatible
+- **Analysis**: Python pandas for validation
+- **Documentation**: Markdown, PDF
+
+---
+**Completed**: September 30, 2025  
+**Institution**: Elevate Labs Data Analyst Internship
