@@ -1,0 +1,68 @@
+# Task 7 — SQLite Sales Analysis with Python
+
+This directory contains all files for **Task 7: Basic Sales Summary** in the Elevate Labs Data Analyst Internship. The goal is to create a tiny SQLite database, run SQL queries via Python, and visualize sales results.
+
+## Contents
+
+- **sales_data.db**  
+  SQLite database containing the `sales` table with sample sales records.
+
+- **sales_analysis.py**  
+  Python script that:
+  1. Creates and populates the `sales` table in `sales_data.db`.  
+  2. Runs two SQL queries:  
+     - Sales summary by product (total quantity, revenue, transactions, average price).  
+     - Monthly sales overview (transactions, revenue, units sold).  
+  3. Prints results to the console.  
+  4. Generates side-by-side bar charts (`sales_chart.png`) for revenue by product and monthly revenue trend.
+
+- **sales_analysis.sql**  
+  Standalone SQL file illustrating advanced queries (for other RDBMS) such as:  
+  - Monthly and quarterly aggregations.  
+  - Top months by revenue.  
+  - Moving averages, growth percentages, and category ranking.
+
+- **sales_chart.png**  
+  Bar charts saved by `sales_analysis.py` showing:
+  - Total revenue by product.  
+  - Monthly revenue trend.
+
+- **TASK 7 DA.pdf**  
+  Detailed problem statement and mini-guide for Task 7.
+
+- **task7_answers.pdf**  
+  Model interview Q&A covering connection, queries, grouping, calculations, and visualization.
+
+## Prerequisites
+
+- Python 3.x  
+- Packages: `sqlite3` (built-in), `pandas`, `matplotlib`  
+- (Optional) Jupyter Notebook
+
+
+                                                     
+## Usage
+
+1. **Run the analysis script**  
+                                                     
+This will:
+- Create `sales_data.db` (if not exists) and insert sample records.  
+- Execute SQL queries and display summary tables.  
+- Generate `sales_chart.png` with the two bar charts.
+
+2. **View the chart**  
+Open `sales_chart.png` to see revenue breakdowns visually.
+
+3. **Explore SQL examples**  
+Run queries from `sales_analysis.sql` in any SQL editor to practice advanced aggregations.
+
+## Key Insights
+
+- Top-selling products and overall revenue drivers.  
+- Month-over-month revenue trends.  
+- Foundation for more complex SQL analytics workflows.
+
+---
+
+Elevate Labs — Data Analyst Internship Task 7
+
